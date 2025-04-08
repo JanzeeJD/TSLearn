@@ -17,3 +17,30 @@ interface Student {
   results: SubjectResult[];
 }
 
+function printReportCard (student: Student): string{
+ const gradeName = GradeLevel[student.grade];
+ const subjects = student.results
+ .map(([subject,score]) => `${subject} - ${score}`)
+ .join(", ")
+ return `${student.name}, age ${student.age}, is in ${gradeName} school. Entrolled: ${student.isEnrolled}. Subjects: ${subjects}.`
+}
+
+function getStudentInfo(id: number | string): void {
+  console.log(`Details for student with ID: ${id}`);
+}
+
+let student1: Student = {
+  name: "Moana",
+  age: 14,
+  grade: GradeLevel.Middle,
+  isEnrolled: true,
+  results: [["Math", 85], ["English", 78]],
+};
+
+console.log(printReportCard(student1));
+getStudentInfo(17);
+getStudentInfo("M107");
+
+
+
+
