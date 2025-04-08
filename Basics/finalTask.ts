@@ -37,10 +37,21 @@ let student1: Student = {
   results: [["Math", 85], ["English", 78]],
 };
 
+let student2: Student = {
+  name: "Luwai",
+  age: 10,
+  grade: GradeLevel.Primary,
+  isEnrolled: true,
+  results: [["Math", 95], ["English", 98]],
+};
+
 console.log(printReportCard(student1));
 getStudentInfo(17);
 getStudentInfo("M107");
 
+console.log(printReportCard(student2));
+getStudentInfo(12);
+getStudentInfo("L102");
 
 
 
