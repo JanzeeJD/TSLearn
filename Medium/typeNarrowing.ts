@@ -8,3 +8,11 @@ If the value is a number, multiplies it by 2.
 If it’s a string, prints it in uppercase.
 
 Call this function with both a number and a string. */
+
+function logValue(value:number | string){
+  if (typeof value === "number"){
+    console.log(value*2);    
+  } else {
+    console.log(value.toUpperCase());
+  }
+}
