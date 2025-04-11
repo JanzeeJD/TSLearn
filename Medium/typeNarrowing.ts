@@ -16,3 +16,7 @@ function logValue(value:number | string){
     console.log(value.toUpperCase());
   }
 }
+
+logValue(17);
+logValue("haiii");
+
