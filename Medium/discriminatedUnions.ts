@@ -33,3 +33,4 @@ function printVehicleDetails(vehicle:Vehicle){
    }
 }
 
+printVehicleDetails({kind:"car", seats:4})
