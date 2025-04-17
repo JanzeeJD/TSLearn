@@ -49,5 +49,13 @@ function printUserInfo (user:User){
   const age = user.age ?? "Age not available";
   console.log("Age:", age);
   
+  const email = user.contact?.email?? "Email not provided";
+  console.log("Email:", email);
+
+  const phone = user.contact ?.phone?? "Phone not provided";
+  console.log("Phone:", phone);
 }
 
+printUserInfo(user1);
+
+printUserInfo(user2);
